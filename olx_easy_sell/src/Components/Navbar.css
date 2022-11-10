@@ -1,23 +1,29 @@
 .main{display: flex;
     width: 100%;
+    height: 100px;
 }
 .large_nav_flex{align-items: center;
 justify-content: space-between;
-border-bottom: 1px solid blue;}
+border-bottom: 1px solid rgb(40, 40, 125);}
 
 .logo_nav{width: 80px;}
 
 .first_option_nav{
-    display:flex;
+    
    align-items: center;
-           width:272px;
-            height:48px;
          
+            height:48px;
+           
          border:2px solid black;}
+
+
+
          .India_Input{border: none;
-        width:70%;
+        width:20%;
     margin-right: 15%;
     }
+
+    .India_Input{height: 100%;}
   
 .lang{width: 10%;
 height: 40px;}
@@ -26,19 +32,25 @@ height: 40px;}
 .search_input_nav{
     display: flex; 
     border:2px solid black;
-width: 37%;
+width: 30%;
 height: 44px;}
-.search_inp{width:83%;
-height:33px;
-border: none;
+
+.search_inp{width:100%;
+height:91%;
+border:none;
 margin-right: 1px;
 color: white;}
+
+
+
+
 .searh_click_nav{width: 15%;
     height: 100%;
 background-color: black;
 color: white;
 }
 .searh_click_nav{color: white;
- margin-left: 1%;}
+ margin-left: 1%;
+}
 
  .serach_icon_btn{height: 8px;}
