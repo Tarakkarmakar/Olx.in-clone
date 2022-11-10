@@ -1,6 +1,10 @@
 .main{display: flex;
     width: 100%;
     height: 100px;
+    position: sticky;
+    top:0px;
+    background: white;
+   
 }
 .large_nav_flex{align-items: center;
 justify-content: space-between;
@@ -11,7 +15,7 @@ border-bottom: 1px solid rgb(40, 40, 125);}
 .first_option_nav{
     
    align-items: center;
-         
+   border-radius: 7px;
             height:48px;
            
          border:2px solid black;}
@@ -33,18 +37,19 @@ height: 40px;}
     display: flex; 
     border:2px solid black;
 width: 30%;
-height: 44px;}
+height: 44px;
+border-radius: 7px;}
 
 .search_inp{width:100%;
-height:91%;
+height:98%;
 border:none;
-margin-right: 1px;
-color: white;}
+
+}
 
 
 
 
-.searh_click_nav{width: 15%;
+.searh_click_nav{width: 16%;
     height: 100%;
 background-color: black;
 color: white;

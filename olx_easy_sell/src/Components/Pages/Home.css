@@ -1,0 +1,36 @@
+.menu_bar_box{height: 40px;
+width: 100%;
+margin-top: 0px;}
+
+
+.Banner_box{background-color: #3a77ff;
+width: 100%;
+height: 135px;
+display: flex;
+align-items: center;}
+.left_logo{width: 80%;
+    height: 90%;
+    border-radius: 100%;
+}
+.banner_left{background-color: #c7dcff;
+    width: 30%;
+height:100%;
+display: flex;
+border-radius: 100%;
+}
+.banner_text_box{width: 23%;
+    text-align: center;
+    margin-right: 5%
+    
+    ;
+  
+}
+.banner_text1{color: white;
+font-size: 22px;}
+.banner_text2{color: rgb(150, 234, 153);}
+
+
+.min_box_product{height: 200px;
+    width:20%;
+border: 1px solid black;}
+.min_box_product>img{height: 60%;}
