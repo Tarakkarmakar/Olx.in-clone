@@ -1,9 +1,9 @@
 import { background, Box,Button,color,Flex,Select, Stack} from "@chakra-ui/react";
 import Navbar from "../Navbar";
-
+import { StarIcon} from '@chakra-ui/icons'
 import  Styles  from "./Home.css";
 
-export default function Home(params) {
+export default function Home(){
      
 
     return(
@@ -61,48 +61,130 @@ export default function Home(params) {
 <br />
         <br />
 
-<Box style={{display:'flex',justifyContent:"space-between"}}>
+<Box className="data_box">
+    <Flex style={{justifyContent:"space-between"}}>
     <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/kx877vtqwwe93-IN/image;s=300x600;q=60" alt="" />
-    <h1>Rs.99,00,00,000</h1>
-    <h2>15 </h2>
-    <p> </p>
+    <h1>$ 99,00,0</h1>
+    <h2>15 Cents Aparment  </h2>
+    <p> Mumbai</p>
     </Box>
     <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/t4i3gx7jeh303-IN/image;s=300x600;q=60" alt="" />
-    <h1></h1>
-    <h2></h2>
-    <p> </p>
+    <h1>$ 10,500</h1>
+    <h2>Honda jazz 1.2 VX i VTEC,2018,Petrol</h2>
+    <p> AVARAMPALAYAM,COIMBATORE</p>
     </Box>
 
     <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/a5q90435cdqh3-IN/image;s=300x600;q=60" alt="" />
-    <h1></h1>
-    <h2></h2>
-    <p> </p>
+    <h1>$ 100</h1>
+    <h2>Apple iPhone 7s new 128gb</h2>
+    <p> SAMUDRAPUR,MAHARASTRA</p>
     </Box>
 
     <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/bl3pz3edh1f4-IN/image;s=300x600;q=60" alt="" />
-    <h1></h1>
-    <h2></h2>
-    <p> </p>
+    <h1>$ 500</h1>
+    <h2>Brand new original IphoneXS/64gb av...</h2>
+    <p> SAMUDRAPUR,MAHARASTRA</p>
     </Box>
    
 
 
-
+    </Flex>
 
 </Box>
-<Box>
-    <Flex>
+<Box className="data_box">
+    <Flex style={{justifyContent:"space-between"}}>
 <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/gqwiw7an9k0y2-IN/image;s=300x600;q=60" alt="" />
-    <h1></h1>
-    <h2></h2>
-    <p> </p>
+<h1>$  ̶1̶3̶,̶5̶0̶0̶1 ,$12,500 </h1>
+    <h2>Honda jazz 1.2 VX i VTEC,2018,Petrol</h2>
+    <p> AVARAMPALAYAM,COIMBATORE</p>
     </Box>
     <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/30g2mocb7y3k-IN/image;s=300x600;q=60" alt="" />
-    <h1></h1>
-    <h2></h2>
-    <p> </p>
+    <h1>$ 16,800</h1>
+    <h2>Honda jazz 1.2 VX i VTEC,2018,Petrol</h2>
+    <p> AVARAMPALAYAM,COIMBATORE</p>
     </Box>
+   
+
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/bl3pz3edh1f4-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 500</h1>
+    <h2>Brand new original IphoneXS/64gb av...</h2>
+    <p> SAMUDRAPUR,MAHARASTRA</p>
+    </Box>
+    
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/t4i3gx7jeh303-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 10,500</h1>
+    <h2>Honda jazz 1.2 VX i VTEC,2018,Petrol</h2>
+    <p> AVARAMPALAYAM,COIMBATORE</p>
+    </Box>
+
     </Flex>
+</Box>
+
+
+<Box className="data_box">
+    <Flex style={{justifyContent:"space-between"}}>
+   
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/t4i3gx7jeh303-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 10,500</h1>
+    <h2>Honda jazz 1.2 VX i VTEC,2018,Petrol</h2>
+    <p> AVARAMPALAYAM,COIMBATORE</p>
+    </Box>
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/kx877vtqwwe93-IN/image;s=300x600;q=60" alt="" />
+    <h1>Rs.99,00,00,000</h1>
+    <h2>15 Cents Aparment  </h2>
+    <p> Mumbai</p>
+    </Box>
+
+   
+
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/bl3pz3edh1f4-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 500</h1>
+    <h2>Brand new original IphoneXS/64gb av...</h2>
+    <p> SAMUDRAPUR,MAHARASTRA</p>
+    </Box>
+   
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/a5q90435cdqh3-IN/image;s=300x600;q=60" alt="" />
+    <h1> $100</h1>
+    <h2>Apple iPhone 7s new 128gb</h2>
+    <p> SAMUDRAPUR,MAHARASTRA</p>
+    </Box>
+
+
+    </Flex>
+
+</Box>
+
+
+<Box className="data_box">
+    <Flex style={{justifyContent:"space-between"}}>
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/kx877vtqwwe93-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 99,00,0</h1>
+    <h2>15 Cents Aparment  </h2>
+    <p> Mumbai</p>
+    </Box>
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/oa77zaprfm2g-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 400</h1>
+    <h2>MRJ Sportd kids bicycle</h2>
+    <p> ABERDEEN BAZAR ,PORT BLAIR</p>
+    </Box>
+
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/a5q90435cdqh3-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 100</h1>
+    <h2>Apple iPhone 7s new 128gb</h2>
+    <p> SAMUDRAPUR,MAHARASTRA</p>
+    </Box>
+
+    <Box className="min_box_product" ><img  src="https://apollo-singapore.akamaized.net/v1/files/te8i1vwr3ycn2-IN/image;s=300x600;q=60" alt="" />
+    <h1>$ 30, 500</h1>
+    <h2>NO.1 CUSTOM JEEP_JAIN MOTOR_A</h2>
+    <p>ABERDEEN BAZAR ,PORT BLAIR <StarIcon/> </p>
+    
+    </Box>
+   
+
+
+    </Flex>
+
 </Box>
 
 
