@@ -2,6 +2,7 @@ import { background, Box,Button,color,Flex,Select, Stack} from "@chakra-ui/react
 import Navbar from "../Navbar";
 import { StarIcon} from '@chakra-ui/icons'
 import  Styles  from "./Home.css";
+import Footer from "../Footer";
 
 export default function Home(){
      
@@ -186,6 +187,34 @@ export default function Home(){
     </Flex>
 
 </Box>
+
+
+<Box className="banner_last"><img src="https://statics.olx.in/external/base/img/phone-app.webp"/>
+
+
+
+<Box className="banner_last_text"><h1>TRY THE OLX APP</h1> <h2>Buy ,sell and find just about anything using the app on your mobile</h2></Box>
+<Box className="divide"></Box>
+<Box><h2>GET YOUR APP TODAY</h2>
+<div id="btn-box1">
+          <button class="app">
+            <img src="https://img.icons8.com/ios-filled/2x/mac-os.png" />
+            <p>App Store</p>
+            
+          </button>
+          <button>
+            <img src="https://img.icons8.com/ios-filled/344/google-play.png" />
+            <p>Google Play</p>
+          </button>
+        </div>
+</Box>
+
+</Box>
+
+
+<Footer />
+
+
 
 
 

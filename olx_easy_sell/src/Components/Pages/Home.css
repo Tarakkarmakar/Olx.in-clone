@@ -54,3 +54,55 @@ margin-right: 30px;
 font-weight: 450;
 margin-bottom: 3px;}
 .min_box_product>p{font-size: 12px;}
+
+
+#btn-box1 {
+    height: 34px;
+    width: 304px;
+    display: flex;
+    margin-top: 2%;
+  }
+  
+  #btn-box1 > button {
+    height: 34px;
+    width: 133px;
+    display: flex;
+    background-color: #fefefe;
+    border: 1px solid blue;
+    justify-content: center;
+    border-radius: 11px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #btn-box1 > button:hover {
+    background-color: rgb(214, 219, 252);
+  }
+  .app {
+    margin-right: 9px;
+  }
+  #btn-box1 > button > p {
+    align-self: center;
+    color: black;
+  }
+
+  #btn-box1 > button> img {
+    height: 60%;
+    color: blue;
+    width: 16%;
+    align-self: center;
+    display: flex;
+    margin-right: 5px;
+  }
+  .banner_last{background-color:#3a77ff;
+    display: flex;
+color:white;
+align-items: center;}
+.banner_last_text{width: 30%;
+font-size: 22px;}
+
+.divide{width: 2px;
+height:100px;
+margin-left: 1%;
+margin-right: 1%;
+background-color: azure;}
+  
