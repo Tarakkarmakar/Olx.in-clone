@@ -2,23 +2,52 @@ import { Show,Select, Hide ,Box,Stack, Flex,Input,InputGroup,InputRightAddon,Inp
 import { SearchIcon,ChevronDownIcon,ChatIcon,BellIcon,AddIcon} from '@chakra-ui/icons'
 import  styles from "./Navbar.css"
 
-
 import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  Alert,
 
+AlertIcon ,
+AlertTitle,
+AlertDescription,
+  ModalBody,
+  ModalCloseButton,} from '@chakra-ui/react'
+import {
+  useDisclosure,
     Button,
+  
   } from '@chakra-ui/react'
+  import { useState } from 'react'
+import LoginModal from './LoginModal'
 
 
 export default function Navbar() {
 
+  const [mail,setMail]=useState("")
 
+const alerting =()=>{
+
+if(mail.length>7){
+  alert("Congratilation Login successfull")
+  onClose()
+}
+else{
+  alert("Please enter a valid Mail")
+}
+
+}
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
 return (
    <>
   <Show breakpoint='(max-width: 400px)'>
  
  <Stack >
 
-    <Box><img src="https://scontent.fccu13-1.fna.fbcdn.net/v/t39.30808-6/315002987_1801734266854939_7038530819874117418_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=mZOnteQGlIoAX9QsIFl&_nc_ht=scontent.fccu13-1.fna&oh=00_AfB5j1POvfVtG1MsVSxa4Cb3hXcs_N9s3eqlqXDigOUYFQ&oe=6370BB18"></img></Box>
+    <Box><img src=""></img></Box>
  </Stack>
 
 </Show>
@@ -29,7 +58,7 @@ return (
  <Stack className='main'>
     <Flex className='large_nav_flex'>
 
-<Box><img className='logo_nav' src="https://scontent.fccu13-1.fna.fbcdn.net/v/t39.30808-6/315002987_1801734266854939_7038530819874117418_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=mZOnteQGlIoAX9QsIFl&_nc_ht=scontent.fccu13-1.fna&oh=00_AfB5j1POvfVtG1MsVSxa4Cb3hXcs_N9s3eqlqXDigOUYFQ&oe=6370BB18"></img></Box>
+<Box><img className='logo_nav' src="https://www.underconsideration.com/brandnew/archives/olx_logo.png"></img></Box>
 <Box  className='first_option_nav'>
 <InputGroup   >
     <InputLeftAddon children={<SearchIcon />} style={{border:"none",background:"white"}} />
@@ -55,12 +84,13 @@ return (
     </Box>
     <Box ><button ><ChatIcon w={6} h={6}/></button></Box>
     <Box><button><BellIcon w={6} h={6} /></button></Box>
-    <Box><Button colorScheme="white" color="black"> Login</Button></Box>
+    <Box><Button colorScheme="white" color="black" onClick={onOpen}> Login</Button></Box>
 
-    <Button style={{marginRight:"1%",border:" 2px solid yellow",borderRadius:"9px"}}   colorScheme='teal' size='lg'>
+    <Button onClick={()=>window.location.href="https://www.olx.in/post"} style={{marginRight:"1%",border:" 2px solid yellow",borderRadius:"9px"}}   colorScheme='teal' size='lg'>
     <AddIcon />
     &nbsp;  SELL
   </Button>
+<LoginModal isOpen={isOpen}  onClose={onClose} onOpen={onOpen} alerting={alerting} mail={mail} setMail={setMail}/>
 
     </Flex>
 </Stack>
