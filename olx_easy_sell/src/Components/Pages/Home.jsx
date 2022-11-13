@@ -1,11 +1,12 @@
-import { background, Box,Button,color,Flex,Select, Stack} from "@chakra-ui/react";
+import { AlertTitle, background, Box,Button,color,Flex,Select, Stack} from "@chakra-ui/react";
 import Navbar from "../Navbar";
-import { StarIcon} from '@chakra-ui/icons'
+import { StarIcon,TriangleDownIcon} from '@chakra-ui/icons'
 import  Styles  from "./Home.css";
 import Footer from "../Footer";
 
 export default function Home(){
-     
+
+
 
     return(
         <>
@@ -16,19 +17,20 @@ export default function Home(){
             <Flex style={{justifyContent:"space-between"}}
             >
                 <Box>
-            <Select name="" id="">
-                =
+            <Select name="" id="" >
+                
+            <option value=""><TriangleDownIcon/></option>
             <option value=""></option>
                 <option value="">Bike</option>
                
-                <option value="">Mobile</option>
+                <option value="">Property</option>
                 <option value="">Cars</option>
                 <option value="">PLot</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">laptop</option>
+                <option value="">Desktop</option>
+                <option value="">craft</option>
+                <option value="">Art</option>
+                <option value="">Decor</option>
 
 
             </Select>
@@ -196,14 +198,14 @@ export default function Home(){
 <Box className="divide"></Box>
 <Box><h2>GET YOUR APP TODAY</h2>
 <div id="btn-box1">
-          <button class="app">
+          <button class="app" onClick={()=>window.location.href="https://apps.apple.com/in/app/olx-buy-sell-near-you/id913492792?utm_source=desktop_ios&utm_medium=home_banner&utm_campaign=home"}>
             <img src="https://img.icons8.com/ios-filled/2x/mac-os.png" />
             <p>App Store</p>
             
           </button>
-          <button>
+          <button onClick={()=>window.location.href="https://play.google.com/store/apps/details?id=com.olx.southasia&hl=en_IN&utm_source=desktop_android&utm_medium=home_banner&utm_campaign=home&pli=1"}>
             <img src="https://img.icons8.com/ios-filled/344/google-play.png" />
-            <p>Google Play</p>
+            <p >Google Play</p>
           </button>
         </div>
 </Box>
