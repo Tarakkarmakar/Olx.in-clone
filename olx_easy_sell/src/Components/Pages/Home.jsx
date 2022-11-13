@@ -189,8 +189,7 @@ export default function Home(){
 </Box>
 
 
-<Box className="banner_last"><img src="https://statics.olx.in/external/base/img/phone-app.webp"/>
-
+<Box className="banner_last"><img style={{borderRadius:"50%"}} src="https://tse4.mm.bing.net/th?id=OIP.w4jZ9YfyztDySj8EA1HAswHaEK&pid=Api&P=0"/>
 
 
 <Box className="banner_last_text"><h1>TRY THE OLX APP</h1> <h2>Buy ,sell and find just about anything using the app on your mobile</h2></Box>
