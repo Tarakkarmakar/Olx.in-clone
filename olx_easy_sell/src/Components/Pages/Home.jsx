@@ -1,17 +1,30 @@
-import { AlertTitle, background, Box,Button,color,Flex,Select, Stack} from "@chakra-ui/react";
+import { AlertTitle, background, Box,Button,color,Flex,Select, Stack, useDisclosure} from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import { StarIcon,TriangleDownIcon} from '@chakra-ui/icons'
 import  Styles  from "./Home.css";
 import Footer from "../Footer";
+import SuccessAlert from "../SuccessAlert";
 
 export default function Home(){
 
-
+    const fun=()=>{
+        onOpen()
+    }
+    
+    const {
+        isOpen: isVisible,
+        onClose,
+        onOpen
+      } = useDisclosure({ defaultIsOpen: false })
+    
 
     return(
         <>
 
-        <Navbar />
+        <Navbar fun={fun} />
+
+
+        <SuccessAlert fun={fun}  onClose={onClose} onOpen={onOpen} isVisible={isVisible}/>
 
         <Box className="menu_bar_box">
             <Flex style={{justifyContent:"space-between"}}

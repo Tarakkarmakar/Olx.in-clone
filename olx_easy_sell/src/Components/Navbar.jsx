@@ -24,15 +24,16 @@ import {
 import LoginModal from './LoginModal'
 
 
-export default function Navbar() {
+export default function Navbar({fun}) {
 
   const [mail,setMail]=useState("")
 
 const alerting =()=>{
 
 if(mail.length>7){
-  alert("Congratilation Login successfull")
+
   onClose()
+  fun()
 }
 else{
   alert("Please enter a valid Mail")
