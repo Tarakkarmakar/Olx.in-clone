@@ -1,4 +1,6 @@
 # Olx.in | Clone
+OLX.in is an online marketplace for consumer-to-consumer sales, particularly targeting users in emerging markets, with a view to providing a safe, reliable and efficient way for consumers to buy and sell goods.
+
 It is clone of olx.in
 
 I have made this website from scratch with my Tech skills.
